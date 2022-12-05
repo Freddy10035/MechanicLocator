@@ -1,0 +1,52 @@
+.dark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.507);
+    z-index: 1;
+    min-height: 100vh;
+ /* display: none;    */
+}
+
+.repair-card,.noti-holder-div{ 
+    /* z-index: 5; */
+    /* background: white; */
+    /* box-shadow: unset; */
+}
+.noti-holder{ 
+    padding: 20px 10px;
+    border-radius: 6px;
+    width: 95%;
+    position: relative;
+
+}
+.wish{
+    font-weight: 600;
+}
+.rev-text{
+    max-width: 300px;
+}
+.input-grp{
+    justify-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.save-review{
+    margin-top: 10px;
+}
+.maxH{
+    justify-content: center;
+}
+.rates .icon{
+    border-radius: 50%;
+    padding: 5px;
+    /* box-sizing: content-box; */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.rates .icon:hover{
+    background:  var(--bgcolor);
+}

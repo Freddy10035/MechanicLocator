@@ -1,0 +1,93 @@
+.num-plate{
+    color:var(--blue);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+main{
+    padding: 5rem 1rem;
+}
+.holder-sect{
+    display: grid;
+justify-items: end;
+}
+h3, h4{
+    text-align: center;
+    margin-bottom: 8px;
+    width:100%;
+}
+.total-lbl,.total-val{
+    font-weight: 600;
+}
+.repair-card{
+    border: 1px solid var(--horizontalLine);
+    border-radius: var(--bRadius);
+padding: 10px;
+box-shadow: var(--darkerShadow);
+margin: 15px 5px;
+}
+.date{
+    /* margin-right:10px ; */
+    font-size:  14px;
+    font-weight: 600;
+color: var(--deepOrange);
+}
+table th{
+    text-align: left;
+}
+.tbl-row1{
+    border-bottom: 1px solid var(--grey3);
+}
+.holder-tbl{
+    padding: 5px 20px;
+}
+.data-row li{
+    margin-right: 10px;
+}
+.data-row{
+    width: 100%;
+text-align: left;
+display: flex;
+justify-content: space-between;
+margin: 4px 0;
+padding: 4px 0;
+border-bottom: 1px solid var(--horizontalLine);
+/* align-items: center; */
+
+}
+.data-row:first-child{
+    border-top: 2px solid var(--grey3);
+    margin-top: 5px;
+
+}
+.data-row:last-child{
+    border-bottom: 2px solid var(--grey3);
+    margin-bottom: 5px;
+
+}
+.header-row{
+    justify-content: space-between;
+}
+.row-activity{
+    max-width: 200px;
+}
+.mech-name{
+    max-width: 200px;
+    font-size:  14px;
+    margin-right: 10px;
+}
+.row1{
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.add-btn{
+    margin-bottom: 1rem;
+    width:max-content;
+}
+.reverse{
+flex-direction: row-reverse;
+width: 100%;
+align-items: flex-start;
+}

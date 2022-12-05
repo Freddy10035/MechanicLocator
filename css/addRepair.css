@@ -1,0 +1,121 @@
+main{
+    /* padding: 5rem 10px; */
+    min-height: 90vh;
+display: flex;
+place-items: center;
+justify-content: center;
+}
+.edit-btn, .repair-btn, .add-btn, .del-btn, .save-changes{
+    padding: 5px 10px;
+    border-radius: var(--bRadius);
+    border: 2px solid var(--textGreyish);
+    /* outline: none; */
+    background: white;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .edit-btn .icon, .repair-btn .icon, .add-btn .icon{
+    width: 20px;
+  height: 20px;
+  margin: 0 3px;
+  }
+  .add-btn, .save-changes{
+    background: var(--blue);
+    border-color: var(--blue);
+    color: white;
+    margin-left: unset;
+  }
+  .add-btn:hover , .save-changes:hover{
+    background: #0B496A;
+  }
+
+  
+.input-grp{
+    display: grid;
+    grid-row-gap: 5px;
+    margin: 20px 0;
+  }
+  .input-elmt{
+    border: 2px solid var(--grey3);
+    padding: 10px 6px 5px 6px;
+    border-radius: var(--bRadius);
+    max-width: 300px;
+    width: 100%;
+  }
+  .input-grp span {
+    display: flex;
+    align-items: baseline;
+  }
+  .holder-tbl .cost-input{
+    width: max-content;
+    /* flex-grow: 1; */
+    margin-left: 6px;
+    max-width: 90px;
+    border: unset !important;
+  }
+  .data-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: unset;
+  }
+  .holder-tbl .input-elmt{
+    border: none;
+    border-right: 2px solid var(--grey2Box);
+    border-radius: unset !important;
+    padding: 12px 1px 6px 2px;
+    font-size: 16px;
+  }
+  .repair-card{ 
+    border: 2px solid var(--grey2Box);
+    margin-top: 0px;
+    box-shadow: unset;
+  }
+.plate-input{
+  width:max-content;
+  border-radius: var(--bRadius);
+  text-transform: uppercase;
+}
+.act-input{ 
+  flex-grow: 1;
+  max-width: unset;
+}
+.form-large{
+  width: 95%;
+
+}
+.data-row:last-child, .data-row:first-child{
+  /* border-bottom: unset; */
+border-top: unset;
+border-bottom: 1px solid var(--horizontalLine);
+margin:unset;
+}
+
+.data-row{
+  border-bottom: 1px solid var(--horizontalLine);
+}
+.new-add{ 
+  background: unset;
+  color: var(--blue);
+  margin: 10px 0;
+}
+.new-add:hover{ 
+  background-color: #b5e5ff;
+}
+.save-record{ 
+  background: var(--green);
+  border-radius: 30px;
+  color: white;
+  max-width: 300px;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-size: 18px;
+    padding: 8px;
+    max-width: 240px;
+    margin-top: 1rem;
+    margin: auto;
+}

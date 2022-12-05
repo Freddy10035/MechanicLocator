@@ -1,0 +1,159 @@
+body{
+  min-height: 90vh;
+}
+main{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+min-height: 100vh;
+}
+section{
+  padding: 4rem 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+padding-bottom: 0;
+flex-grow: 1;
+}
+.wrap{
+  flex-wrap: wrap;
+  padding: unset;
+}
+form h3{
+  text-align: center;
+margin-bottom:5px;
+}
+form{
+  flex-grow: 0.3;
+}
+form p a{
+  color: var(--blue);
+font-weight: 600;
+}
+form p a:hover{
+color: var(--highlightBlueHover);
+}
+.input-grp{
+  display: grid;
+  grid-row-gap: 5px;
+  margin: 13px 0;
+}
+.input-elmt{
+  border: 2px solid var(--grey3);
+  padding: 10px 6px 5px 6px;
+  border-radius: var(--bRadius);
+  max-width: 300px;
+  width: 100%;
+}
+.reg-btn{
+  margin-top: 10px;
+  border-radius: 30px;
+  padding: 10px 14px;
+  border: none;
+  background: var(--blue);
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  /* transition: 0.2s; */
+}
+.bgImage{
+  width: 60%;
+background: linear-gradient(320deg,transparent,#f98e0ea3),url("../Images/brake-disc.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.reg-btn:hover{
+  background: var(--highlightBlueHover);
+}
+.welcome-svg{
+  width: 90%;
+  height: auto;
+  max-width: 500px;
+}
+.loc-btn{
+  /* position: fixed;
+bottom: 15px;
+left: 20px; */
+border-radius: 30px;
+padding: 10px 14px;
+border: none;
+background: var(--blue);
+color: white;
+font-size: 16px;
+}
+.loc{
+    position: relative;
+    display: flex;
+    place-items: center;
+}
+.loc .icon{
+    width:18px;
+    height:18px;
+}
+.loc::before{
+    content: "";
+    position: absolute;
+    top: -0.4em;
+    left: 0.5em;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.loc::after{
+  content: attr(data-tooltip);
+  margin: 0 5px;
+  display: none;
+  opacity: 0;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  top: -3.5em;
+  background: #000000e3;
+  padding: 5px 10px;
+  border-radius: var(--bRadius);
+  /* border-bottom-left-radius: 0px; */
+  left: 0em;
+}
+.loc:hover::before, .loc:hover::after{
+    opacity: 1;
+    display: inline;
+}
+.current-loc-btn{
+  background: var(--deepOrange);
+  border-color: var(--deepOrange);
+  color: white;
+  margin-left: unset;
+  width: max-content;
+  display: flex;
+  place-items: center;
+}
+.current-loc-btn:hover{
+  background-color: #dd3606;
+  transform: none;
+}
+.loc-map{
+  color: var(--deepOrange);
+  border-color: var(--deepOrange);
+  background-color: unset;
+}
+.loc-map:hover{
+  border-color: var(--blue);
+  background-color:unset;
+}
+.input-grp p{
+  text-align: center;
+  max-width: 370px;
+}
+@media screen and (max-width:600px){
+.bgImage{
+  display: none;
+}
+main{ 
+  min-height: unset;
+  padding-top: 4rem;
+}
+}

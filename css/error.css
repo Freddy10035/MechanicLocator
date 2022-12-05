@@ -1,0 +1,17 @@
+
+main{
+    padding-top:4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error-img{
+    width:100%;
+  max-width: 440px;
+  height:auto;
+}
+.error-title{
+    margin-bottom: 9px;
+    font-size: 22px;
+}

@@ -33,32 +33,31 @@ function showPosition(position) {
 
 
 function showError(error) {
-    switch(error.code) {
-      case error.PERMISSION_DENIED:
-        x.innerHTML = "User denied the request for Geolocation."
-        break;
-      case error.POSITION_UNAVAILABLE:
-        x.innerHTML = "Location information is unavailable."
-        break;
-      case error.TIMEOUT:
-        x.innerHTML = "The request to get user location timed out."
-        break;
-      case error.UNKNOWN_ERROR:
-        x.innerHTML = "An unknown error occurred."
-        break;
-    }
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
   }
+}
 
-  function plotPosition(position) {
-    var latlon = position.coords.latitude + "," + position.coords.longitude;
-  
-    // var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
-    // "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
-  
-    // document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-  }
+// function plotPosition(position) {
+//   var latlon = position.coords.latitude + "," + position.coords.longitude;
 
-  
+//   var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=Williamsburg,Brooklyn,NY&zoom=13&size=100x100&markers=color:blue%7Clabel:S%7C11211%7C11206%7C11222&key=AIzaSyBrt_wXf7vS_U5Um47aye3VUkw0T-cjbjc&signature=masterdroyd"
+
+//   document.getElementById("mapholder").innerHTML = "<img src='" + img_url + "'>";
+// }
+
+
 // Property	Returns
 // coords.latitude	The latitude as a decimal number (always returned)
 // coords.longitude	The longitude as a decimal number (always returned)
@@ -72,15 +71,15 @@ function showError(error) {
 
 // getCurrentLocation();
 
-    
-function fetchLoc(){
+
+function fetchLoc() {
   fetch(getCurrentLocation())
-  .then(response => {
-    showPosition(response);
-  })
-  .catch(error => {
-    // showError(error);
-  })
+    .then(response => {
+      showPosition(response);
+    })
+    .catch(error => {
+      // showError(error);
+    })
 }
 
 fetchLoc();

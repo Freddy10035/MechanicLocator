@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/nav.css">
-    <!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>-->
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
 
 </head>
 <body>

@@ -1,8 +1,6 @@
 add total repair costs to rep history page
 show owned cars in homepage*
 
-
-
 Reloading search without refreshing page
 
 Suggest the nearest distance, pop him/her up 
@@ -11,5 +9,38 @@ Correct distance - Hard
 
 
 
+Getting Started:
 
-Code homepage
+Go to the website by typing the URL.
+You will be directed to the homepage where you can search for mechanics based on your location, rating and availability.
+
+Searching for Mechanics:
+
+Type in your location or zip code in the search bar.
+You can also filter your search by rating or availability.
+
+Viewing Mechanic Details:
+
+Click on the mechanic's profile or listing to view more details, such as their contact information, services offered, and customer reviews.
+
+Rating and Reviewing Mechanics:
+
+After visiting the mechanic, you can rate them by clicking on the rating stars on the mechanic's profile page.
+You can also leave a review by clicking on the “write a review” button on the mechanic's profile page.
+
+
+Future Plans
+
+While MechLocator is already a powerful and valuable tool for finding reliable mechanics, I have big plans for the future. 
+My goal is to continuously improve the site and add new features that will make it even more useful for users and mechanics.
+
+In the near future, I plan to add a feature that allows users to book appointments with mechanics directly through the site. 
+This feature will save users time and effort, and it will also help mechanics to manage their schedule more efficiently.
+
+I also plan to add more detailed information about each mechanic, such as their certifications, specializations, and service offerings. 
+This will help users to find mechanics that are best suited for their needs.
+
+Additionally, I are also exploring the use of machine learning to improve the search results, 
+this will help users to find the best mechanic for their needs. I are also looking into integrating more APIs and third-party services 
+to provide more information to my users and mechanics.
+

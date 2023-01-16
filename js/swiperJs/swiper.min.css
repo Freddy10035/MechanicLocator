@@ -28,8 +28,21 @@
     overflow: hidden;
     list-style: none;
     padding: 0;
-    z-index: 1
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+
+/* .swiper-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 16px;
+    align-items: center;
+    justify-content: center;
+} */
 
 .swiper-container-vertical>.swiper-wrapper {
     flex-direction: column
@@ -38,11 +51,13 @@
 .swiper-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
+    height:100%;
     z-index: 1;
     display: flex;
     transition-property: transform;
-    box-sizing: content-box
+    box-sizing: content-box;
+
+    /* flex-basis: 70%; */
 }
 
 .swiper-container-android .swiper-slide,
@@ -66,8 +81,8 @@
 
 .swiper-slide {
     flex-shrink: 0;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     position: relative;
     transition-property: transform
 }
